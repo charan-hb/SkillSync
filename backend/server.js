@@ -1,4 +1,7 @@
-// Load environment variables
+cd backend
+git add server.js
+git commit -m "Update CORS configuration"
+git push// Load environment variables
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -22,15 +25,18 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
-    methods: ['GET', 'POST']
+    origin: ['https://skillsync-1-iwqt.onrender.com', 'http://localhost:3000'],
+    methods: ['GET', 'POST'],
+    credentials: true
   }
 });
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
-  credentials: true
+  origin: ['https://skillsync-1-iwqt.onrender.com', 'http://localhost:3000'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
