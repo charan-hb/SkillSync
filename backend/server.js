@@ -1,7 +1,4 @@
-cd backend
-git add server.js
-git commit -m "Update CORS configuration"
-git push// Load environment variables
+
 const dotenv = require('dotenv');
 dotenv.config();
 
