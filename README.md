@@ -100,3 +100,11 @@ The API documentation will be available at `http://localhost:5000/api-docs` once
 ## License
 
 This project is licensed under the MIT License. 
+##sample 
+![Screenshot 2025-05-20 123000](https://github.com/user-attachments/assets/362a1a4e-8f1a-4d5f-9177-60b62560e6ef)
+![Screenshot 2025-05-20 122837](https://github.com/user-attachments/assets/47d47e5c-3e78-4fbf-ab1b-a2f4e63fa301)
+![Screenshot 2025-05-20 122905](https://github.com/user-attachments/assets/6e7d5a39-8cd0-43d0-82eb-ede21bba7145)
+![Screenshot 2025-05-20 172711](https://github.com/user-attachments/assets/3e933652-07de-4a89-8f6a-dfe47073630a)
+
+
+
