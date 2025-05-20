@@ -68,6 +68,11 @@ const notificationRoutes = require('./routes/notificationRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const auth = require('./middleware/auth').auth;
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to SkillSync API' });
+});
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', auth, postRoutes);
